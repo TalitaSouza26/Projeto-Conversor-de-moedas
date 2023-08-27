@@ -1,6 +1,6 @@
 <h1>Projeto Conversor de moedas</h1>
 
-<h2> O objetivo do projeto é converter o real para outras moedas, na primeira parte do projeto a conversão era apenas para Dólar e Euro, por fim conseguir acrescentar mais duas moedas para conversão Libra e Bitcoin.
+<h2> O objetivo do projeto é converter o real para outras moedas, a primeira parte do projeto a conversão era apenas para Dólar e Euro, por fim conseguir acrescentar mais duas moedas para conversão Libra e Bitcoin.
 Usei HTML , CSS e  JavaScript.
 
 </h2>
