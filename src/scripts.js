@@ -7,7 +7,9 @@ function convertValues() {
     const currencyValueConvertd = document.querySelector('.currency-value')
     console.log(currencySelect.value)
     const dolarToday = 5.2
-    const euroToday = 6.4
+    const euroToday = 5.26
+    const libratoday = 6.13
+    const bitcointoday = 0.789
 
 
 
@@ -19,6 +21,18 @@ function convertValues() {
         currencyValueConvertd.innerHTML = new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' }).format(inputCurrencyValue / euroToday)
 
     }
+    if (currencySelect.value == 'libra') {
+        currencyValueConvertd.innerHTML = new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'GBP' }).format(inputCurrencyValue / libratoday)
+
+    }
+    if (currencySelect.value == 'bitcoin') {
+        currencyValueConvertd.innerHTML = new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'BTC' }).format(inputCurrencyValue / bitcointoday)
+
+    }
+
+
+
+
 
     currencyValueToConvert.innerHTML = new Intl.NumberFormat('pt-BR', { style: "currency", currency: 'BRL' }).format(inputCurrencyValue)
 }
@@ -35,9 +49,20 @@ function changeCurrency() {
         currencyName.innerHTML = 'Euro'
         currencyimg.src = './css/img/Design sem nome 3.png'
     }
+    if (currencySelect.value == 'libra') {
+        currencyName.innerHTML = 'Libra'
+        currencyimg.src = './css/img/libra 1.png'
+    }
+    if (currencySelect.value == 'bitcoin') {
+        currencyName.innerHTML = 'Bitcoin'
+        currencyimg.src = './css/img/bitcoin 1.png'
+    }
 
     convertValues()
 
 }
 currencySelect.addEventListener('change', changeCurrency)
 convertButton.addEventListener('click', convertValues)
+
+
+
