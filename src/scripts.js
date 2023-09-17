@@ -43,19 +43,19 @@ function changeCurrency() {
     if (currencySelect.value == 'dolar') {
         currencyName.innerHTML = 'Dólar americano'
     }
-    currencyimg.src = './css/img/estados-unidos (1) 1.png'
+    currencyimg.src = './src/css/img/estados-unidos (1) 1.png'
 
     if (currencySelect.value == 'euro') {
         currencyName.innerHTML = 'Euro'
-        currencyimg.src = './css/img/Design sem nome 3.png'
+        currencyimg.src = './src/css/img/Design sem nome 3.png'
     }
     if (currencySelect.value == 'libra') {
         currencyName.innerHTML = 'Libra'
-        currencyimg.src = './css/img/libra 1.png'
+        currencyimg.src = './src/css/img/libra 1.png'
     }
     if (currencySelect.value == 'bitcoin') {
         currencyName.innerHTML = 'Bitcoin'
-        currencyimg.src = './css/img/bitcoin 1.png'
+        currencyimg.src = './src/css/img/bitcoin 1.png'
     }
 
     convertValues()
